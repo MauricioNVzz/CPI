@@ -1,0 +1,27 @@
+
+# Credenciales y configuraciones sensibles
+/config/paypal.php
+/config/connect.php
+.env
+.env.*
+
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de dependencias locales
+/vendor/
+/node_modules/
+
+# Archivos temporales de desarrollo
+/.idea/
+/.vscode/
+
+# Archivos multimedia cargados por los usuarios
+/uploads/multimedia/

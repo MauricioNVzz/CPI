@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f2f2f2;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   VENTANA PRINCIPAL
+   ========================= */
+
+.ventana-animacion {
+    width: 1000px;
+    height: 650px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   PARTE SUPERIOR
+   ========================= */
+
+.barra-superior {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    padding: 20px 30px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* =========================
+   TITULO
+   ========================= */
+
+.barra-superior h1 {
+    margin: 0;
+
+    font-size: 32px;
+
+    color: black;
+}
+
+
+/* =========================
+   FOTO DE PERFIL
+   ========================= */
+
+.foto-perfil {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    background-color: #ddd;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-perfil img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   CONTENIDO
+   ========================= */
+
+.contenido {
+    padding: 30px;
+
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================
+   TARJETA DEL CURSO
+   ========================= */
+
+/* =========================
+   BOTÓN DEL CURSO
+   ========================= */
+
+.tarjeta-curso {
+    width: 280px;
+    height: 280px;
+
+    position: relative;
+
+    box-sizing: border-box;
+
+    padding: 25px;
+
+    background-color: #f7f7f7;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+
+    text-align: left;
+
+    cursor: pointer;
+
+    font-family: Arial, sans-serif;
+}
+
+.tarjeta-curso:hover {
+    background-color: #eeeeee;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
+}
+
+.tarjeta-curso:active {
+    transform: scale(0.98);
+}
+
+/* =========================
+   NOMBRE DEL CURSO
+   ========================= */
+
+.tarjeta-curso h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    font-size: 21px;
+
+    color: black;
+}
+
+
+/* =========================
+   TUTOR
+   ========================= */
+
+.tutor {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    font-size: 15px;
+
+    color: #333;
+}
+
+.tutor a {
+    color: blue;
+
+    text-decoration: none;
+
+    margin-left: 5px;
+}
+
+.tutor a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   DESCRIPCIÓN
+   ========================= */
+
+.descripcion {
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    color: #333;
+
+    margin: 0;
+}
+
+
+/* =========================
+   PRECIO
+   ========================= */
+
+.precio {
+    position: absolute;
+
+    right: 20px;
+    bottom: 15px;
+
+    margin: 0;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: black;
+}

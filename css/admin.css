@@ -1,0 +1,72 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #263238;
+}
+
+.contenedor-admin {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.bienvenida-admin {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.bienvenida-admin h1 {
+    margin-bottom: 15px;
+}
+
+.bienvenida-admin p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.opciones-admin {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tarjeta-admin {
+    display: block;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta-admin:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.tarjeta-admin h2 {
+    margin-bottom: 12px;
+}
+
+.tarjeta-admin p {
+    color: #666;
+    line-height: 1.5;
+}
+
+@media (max-width: 650px) {
+    .opciones-admin {
+        grid-template-columns: 1fr;
+    }
+}

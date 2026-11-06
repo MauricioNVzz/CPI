@@ -1,0 +1,141 @@
+.contenedor-kardex {
+    width: 90%;
+    max-width: 1200px;
+    margin: 35px auto;
+}
+
+.encabezado-kardex {
+    margin-bottom: 25px;
+}
+
+.encabezado-kardex h1 {
+    margin-bottom: 8px;
+}
+
+.resumen-kardex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.tarjeta-resumen {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta-resumen h3 {
+    margin-top: 0;
+}
+
+.tarjeta-resumen p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.filtros-kardex,
+.tabla-kardex {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.filtros-kardex form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18px;
+    align-items: end;
+}
+
+.grupo-filtro {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.grupo-filtro label {
+    font-weight: bold;
+}
+
+.grupo-filtro input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.acciones-filtros {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.acciones-filtros button,
+.acciones-filtros a {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.acciones-filtros button {
+    background: #2563eb;
+    color: white;
+}
+
+.acciones-filtros a {
+    background: #e5e7eb;
+    color: #333;
+}
+
+.tabla-contenedor {
+    overflow-x: auto;
+}
+
+.tabla-kardex table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-kardex th,
+.tabla-kardex td {
+    padding: 13px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.tabla-kardex th {
+    background: #f3f4f6;
+}
+
+.estado {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.estado.completada {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.estado.pendiente {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.mensaje-error {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}

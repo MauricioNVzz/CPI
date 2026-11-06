@@ -1,0 +1,251 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #263238;
+}
+
+.contenedor-usuarios {
+    width: 95%;
+    max-width: 1400px;
+    margin: 40px auto;
+}
+
+.encabezado-usuarios {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.encabezado-usuarios h1 {
+    margin-bottom: 12px;
+}
+
+.encabezado-usuarios p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.boton-regresar {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #263d70;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.tabla-usuarios {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.tabla-usuarios h2 {
+    margin-bottom: 20px;
+}
+
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 950px;
+}
+
+th, td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #263d70;
+    color: white;
+}
+
+tr:hover {
+    background: #f7f8fa;
+}
+
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 12px;
+    background: #263d70;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1b2d54;
+}
+
+.estado {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.activo {
+    background: #d9f2df;
+    color: #17652c;
+}
+
+.bloqueado {
+    background: #f8d7da;
+    color: #842029;
+}
+
+.texto-propio {
+    color: #777;
+    font-size: 13px;
+}
+
+.mensaje-exito,
+.mensaje-error {
+    padding: 14px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.mensaje-exito {
+    background: #d9f2df;
+    color: #17652c;
+}
+
+.mensaje-error {
+    background: #f8d7da;
+    color: #842029;
+}
+
+@media (max-width: 700px) {
+
+    .contenedor-usuarios {
+        width: 96%;
+        margin: 20px auto;
+    }
+
+    .tabla-usuarios {
+        padding: 15px;
+    }
+
+}
+
+/* ==========================================
+   BOTONES DE BLOQUEO DE CUENTAS
+   ========================================== */
+
+.boton-bloquear,
+.boton-desbloquear {
+    border: none;
+    padding: 9px 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.boton-bloquear {
+    background-color: #dc3545;
+    color: white;
+}
+
+.boton-bloquear:hover {
+    background-color: #b02a37;
+}
+
+.boton-desbloquear {
+    background-color: #198754;
+    color: white;
+}
+
+.boton-desbloquear:hover {
+    background-color: #146c43;
+}
+
+/* FILTROS DEL REPORTE DE USUARIOS */
+
+.filtros-usuarios {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.filtros-usuarios h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.filtros-usuarios form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18px;
+    align-items: end;
+}
+
+.grupo-filtro {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.grupo-filtro label {
+    font-weight: bold;
+}
+
+.grupo-filtro input,
+.grupo-filtro select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.acciones-filtros {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.acciones-filtros button,
+.acciones-filtros a {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.acciones-filtros button {
+    background: #2563eb;
+    color: white;
+}
+
+.acciones-filtros a {
+    background: #e5e7eb;
+    color: #333;
+}

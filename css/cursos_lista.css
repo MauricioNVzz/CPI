@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f2f2f2;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   VENTANA PRINCIPAL
+   ========================= */
+
+.ventana-cursos {
+    width: 1000px;
+    height: 650px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   PARTE SUPERIOR
+   ========================= */
+
+.barra-superior {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    padding: 20px 30px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* =========================
+   TEXTO "CURSOS"
+   ========================= */
+
+.barra-superior h1 {
+    margin: 0;
+
+    font-size: 32px;
+
+    color: black;
+}
+
+
+/* =========================
+   FOTO DE PERFIL
+   ========================= */
+
+.foto-perfil {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    background-color: #ddd;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-perfil img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   CONTENIDO
+   ========================= */
+
+.contenido {
+    padding: 30px;
+}
+
+.contenido h2 {
+    margin-top: 0;
+
+    font-size: 24px;
+
+    color: #333;
+}
+/* =========================
+   BOTONES DE CURSOS
+   ========================= */
+
+.botones-cursos {
+    display: flex;
+
+    gap: 20px;
+
+    width: 100%;
+
+    margin-top: 30px;
+}
+
+.botones-cursos button {
+    flex: 1;
+
+    height: 120px;
+
+    background-color: #333;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.botones-cursos button:hover {
+    background-color: #555;
+}
