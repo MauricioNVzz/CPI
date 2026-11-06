@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+
+    overflow-y: auto;
+
+    padding: 30px;
+}
+
+.ventana {
+    width: 1000px;
+
+    min-height: 1000px;
+    height: auto;
+
+    background-color: white;
+
+    display: flex;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.izquierda {
+    width: 50%;
+
+    padding: 35px 40px;
+
+    box-sizing: border-box;
+}
+
+h1 {
+    color: black;
+
+    font-size: 28px;
+
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+
+    color: black;
+
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    height: 38px;
+
+    box-sizing: border-box;
+
+    margin-bottom: 14px;
+
+    border: 1px solid #aaa;
+    border-radius: 5px;
+
+    padding: 10px;
+
+    font-size: 16px;
+}
+
+#validacionContrasena {
+    margin-top: -5px;
+    margin-bottom: 18px;
+}
+
+#validacionContrasena p {
+    margin: 3px 0;
+
+    font-size: 13px;
+
+    color: #666;
+}
+
+.genero {
+    display: flex;
+
+    gap: 30px;
+
+    margin-top: 5px;
+    margin-bottom: 18px;
+}
+
+.genero label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin: 0;
+
+    cursor: pointer;
+}
+
+.genero input[type="radio"] {
+    width: 17px;
+    height: 17px;
+
+    margin: 0;
+}
+
+.fecha {
+    width: 100%;
+    height: 38px;
+
+    border: 1px solid #aaa;
+    border-radius: 5px;
+
+    padding: 8px;
+
+    font-size: 16px;
+
+    margin-bottom: 18px;
+}
+
+button {
+    width: 100%;
+    height: 42px;
+
+    background-color: #333;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.boton-cuenta {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 42px;
+
+    box-sizing: border-box;
+
+    margin-top: 10px;
+
+    background-color: white;
+    color: #333;
+
+    border: 1px solid #333;
+    border-radius: 5px;
+
+    text-decoration: none;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.boton-cuenta:hover {
+    background-color: #f0f0f0;
+}
+
+.derecha {
+    width: 50%;
+
+    min-height: 600px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f7f7f7;
+}
+
+.derecha h2 {
+    color: black;
+
+    font-size: 24px;
+
+    margin-bottom: 25px;
+}
+
+.foto-container {
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    background-color: #ddd;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    margin-bottom: 25px;
+}
+
+.foto-container img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: none;
+}
+
+#textoFoto {
+    color: #777;
+
+    font-size: 18px;
+}
+
+.boton-foto {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 180px;
+    height: 40px;
+
+    background-color: #333;
+
+    color: white;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    margin: 0;
+}
+
+.boton-foto:hover {
+    background-color: #555;
+}
+
+@media (max-width: 800px) {
+
+    body {
+        padding: 20px;
+        align-items: flex-start;
+    }
+
+    .ventana {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .izquierda,
+    .derecha {
+        width: 100%;
+    }
+
+    .derecha {
+        min-height: 400px;
+        padding: 40px 20px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .izquierda {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .genero {
+        gap: 15px;
+    }
+}
+
+#mensajeContrasena {
+    font-size: 13px;
+    color: #777;
+    margin-top: -8px;
+    margin-bottom: 16px;
+}

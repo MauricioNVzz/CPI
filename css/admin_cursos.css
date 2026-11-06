@@ -1,0 +1,177 @@
+
+.contenedor-admin-cursos {
+    width: 90%;
+    max-width: 1400px;
+    margin: 40px auto;
+}
+
+.encabezado {
+    margin-bottom: 25px;
+}
+
+.encabezado h1 {
+    margin-bottom: 8px;
+}
+
+.encabezado p {
+    color: #666;
+}
+
+.panel-cursos {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.panel-cursos h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.formulario-filtros {
+    display: flex;
+    align-items: end;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.campo {
+    flex: 1;
+    min-width: 180px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+button,
+.btn-limpiar,
+.btn-editar {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-buscar {
+    background: #2563eb;
+    color: white;
+}
+
+.btn-limpiar {
+    background: #e5e7eb;
+    color: #333;
+}
+
+.btn-editar {
+    background: #16a34a;
+    color: white;
+}
+
+button:hover,
+.btn-limpiar:hover,
+.btn-editar:hover {
+    opacity: 0.88;
+}
+
+.acciones-filtros {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.encabezado-tabla {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.total-cursos {
+    color: #555;
+    font-weight: bold;
+}
+
+.tabla-contenedor {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 13px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #f3f4f6;
+}
+
+.imagen-curso {
+    width: 75px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.acciones {
+    white-space: nowrap;
+}
+
+.sin-resultados {
+    text-align: center;
+    padding: 25px;
+    color: #666;
+}
+
+.mensaje {
+    padding: 14px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.mensaje.error {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+@media (max-width: 600px) {
+    .contenedor-admin-cursos {
+        width: 95%;
+    }
+
+    .panel-cursos {
+        padding: 15px;
+    }
+
+    .formulario-filtros {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .acciones-filtros {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,353 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+   ========================= */
+
+body {
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f2f2f2;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   VENTANA PRINCIPAL
+   ========================= */
+
+.ventana-perfil {
+    width: 1000px;
+    height: 650px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   BARRA SUPERIOR
+   ========================= */
+
+.barra-superior {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    padding: 20px 30px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* =========================
+   TITULO
+   ========================= */
+
+.barra-superior h1 {
+    margin: 0;
+
+    font-size: 30px;
+
+    color: black;
+}
+
+
+/* =========================
+   NUESTRA FOTO DE PERFIL
+   ========================= */
+
+.foto-perfil-usuario {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    background-color: #ddd;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-perfil-usuario img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   INFORMACIÓN DEL TUTOR
+   ========================= */
+
+.informacion-tutor {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 30px 40px 20px 40px;
+}
+
+
+/* =========================
+   DATOS DE JUAN
+   ========================= */
+
+.datos-tutor {
+    padding-top: 5px;
+}
+
+
+/* =========================
+   NOMBRE DE JUAN
+   ========================= */
+
+.nombre-tutor {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: #222;
+}
+
+
+/* =========================
+   GÉNERO Y FECHA
+   ========================= */
+
+.datos-tutor p:not(.nombre-tutor) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-size: 17px;
+
+    color: #333;
+}
+
+
+/* =========================
+   VALORES
+   ========================= */
+
+.datos-tutor span {
+    color: #555;
+}
+
+
+/* =========================
+   FOTO DE JUAN
+   ========================= */
+
+.foto-juan {
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+
+    background-color: #ddd;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.foto-juan img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   SECCIÓN DE VIDEOS
+   ========================= */
+
+.seccion-videos {
+    padding: 0 40px;
+}
+
+
+/* =========================
+   TITULO VIDEOS
+   ========================= */
+
+.seccion-videos h2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+    font-size: 22px;
+
+    color: #222;
+}
+
+
+/* =========================
+   CUADRO DE VIDEOS
+   ========================= */
+
+.cuadro-videos {
+    width: 100%;
+
+    height: 230px;
+
+    box-sizing: border-box;
+
+    padding: 15px;
+
+    background-color: #f7f7f7;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    overflow-y: auto;
+}
+
+
+/* =========================
+   VIDEO SUBIDO
+   ========================= */
+
+.video-subido {
+    width: 100%;
+    height: 75px;
+
+    display: flex;
+
+    align-items: center;
+
+    box-sizing: border-box;
+
+    padding: 8px;
+
+    margin-bottom: 12px;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    font-family: Arial, sans-serif;
+}
+
+.video-subido:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   MINIATURA
+   ========================= */
+
+.miniatura {
+    width: 100px;
+    height: 58px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+
+    border-radius: 4px;
+}
+
+
+/* =========================
+   BOTÓN PLAY
+   ========================= */
+
+.miniatura span {
+    color: white;
+
+    font-size: 24px;
+}
+
+
+/* =========================
+   INFORMACIÓN DEL VIDEO
+   ========================= */
+
+.informacion-video {
+    padding-left: 20px;
+
+    flex: 1;
+}
+
+
+/* =========================
+   NOMBRE DEL VIDEO
+   ========================= */
+
+.nombre-video {
+    margin: 0 0 6px 0;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    color: #222;
+}
+
+
+/* =========================
+   CURSO
+   ========================= */
+
+.curso-video {
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #555;
+}
+
+
+/* =========================
+   EFECTO AL PASAR EL MOUSE
+   ========================= */
+
+.video-subido:hover {
+    background-color: #eeeeee;
+
+    border-color: #aaa;
+}
